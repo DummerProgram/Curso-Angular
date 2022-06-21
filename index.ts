@@ -53,3 +53,12 @@ const { valor4 } = objeto;
 const { valor3 } = valor4;
 
 console.log(objeto);
+
+const arreglo: string[] = ['cadena1', 'cadena2', 'cadena3'];
+
+console.log(arreglo);
+
+const [valor1] = arreglo;
+const [, , v3] = arreglo;
+
+console.log({ valor1: valor1, valor3: v3 });
