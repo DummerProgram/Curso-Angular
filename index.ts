@@ -26,3 +26,30 @@ const superHeroe: SuperHeroe = {
 
 const direccion = superHeroe.mostrarDireccion();
 console.log(direccion);
+
+interface Objeto1 {
+  valor1?: string;
+  valor2: number;
+  valor3: boolean;
+  valor4?: Objeto2;
+}
+
+interface Objeto2 {
+  valor1?: string;
+  valor2: number;
+  valor3: boolean;
+}
+
+const objeto: Objeto1 = {
+  valor2: 1,
+  valor3: true,
+  valor4: {
+    valor2: 2,
+    valor3: false,
+  },
+};
+
+const { valor4 } = objeto;
+const { valor3 } = valor4;
+
+console.log(objeto);
